@@ -1,0 +1,129 @@
+/* ../css/formLogin.module.css */
+
+@font-face {
+    font-family: 'Josefin Sans Light';
+    src: url('../../../src/josefin/JosefinSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Bold';
+    src: url('../../../src/josefin/JosefinSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Medium';
+    src: url('../../../src/josefin/JosefinSans-Medium.ttf') format('truetype');
+}
+
+.form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans Medium', sans-serif;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 35%;
+
+
+}
+
+.formLabel {
+    padding:20px 90px;
+    font-family: 'Josefin Sans Medium', sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: none;
+  
+   
+}
+
+.formLabel::placeholder{
+    color: #72406f;
+    text-align: left;
+}
+
+.label {
+    font-size: 130%;
+    font-family: 'Josefin Sans Medium', sans-serif;
+}
+
+.formCheck {
+    margin-top: 5%;
+    width: 200px;
+}
+
+.btn {
+    padding: 3% 10%;
+    background-color: white;
+    color: #BA6DB5;
+    border: none;
+    position: absolute;
+    left: 63%;
+    bottom: 10%;
+}
+
+.btn:hover {
+    background-color: #72406f;
+}
+
+.errorBox {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+.formError {
+    padding: 10px 10px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    margin-top: 2%;
+    color: #72406f;
+    font-size: 90%;
+}
+
+.remind {
+    margin-left: 45%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 100%;
+    font-size: 85%;
+}
+
+.remind a {
+    text-decoration: none;
+    color: #72406f;
+    font-weight: bold;
+}
+
+.passarea {
+    position: relative;
+}
+
+.eyeButton {
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    color: #72406f;
+}
+
+
+.formControl{
+    padding:20px 90px;
+    font-family: 'Josefin Sans Medium', sans-serif;
+    color: #72406f;
+    border-radius: 15px;
+    border: none;
+}
+.formControl::placeholder{
+    color: #72406f;
+    
+}
+

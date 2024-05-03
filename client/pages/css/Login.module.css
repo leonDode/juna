@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Josefin Sans Light';
+    src: url('../../src/josefin/JosefinSans-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Josefin Sans Bold';
+    src: url('../../src/josefin/JosefinSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Josefin Sans Medium';
+    src: url('../../src/josefin/JosefinSans-Medium.ttf') format('truetype');
+}
+
+.elipse1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.elipse2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.login{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #BA6DB5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login .title h1{
+    font-family: 'Josefin Sans Bold';
+    font-size: 250%;
+    margin-bottom: 60%;
+    margin-top: -50%;
+
+}
+
+.form{
+    margin-right: 20%;
+}
+
+.logo{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .title h1{
+    color: #BA6DB5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Josefin Sans Bold;
+    font-size: 250%;
+}
