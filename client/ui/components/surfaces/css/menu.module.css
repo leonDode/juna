@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Josefin Sans Light';
+    src: url('../../../../src/josefin/JosefinSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Bold';
+    src: url('../../../../src/josefin/JosefinSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Medium';
+    src: url('../../../../src/josefin/JosefinSans-Medium.ttf') format('truetype');
+}
+
+.menu {
+    display: flex;
+    width: 20%;
+    height: 90vh;
+    background: #BA6DB5;
+    color: white;
+    flex-direction: column;
+    margin: 2%;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden; /* Impede que qualquer conteúdo interno vaze para fora dos limites do .menu */
+    transition: width 0.3s ease;
+    text-decoration: none;
+
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        width: 60%;
+    }
+}
+
+@media (max-width: 320px) {
+    .menu {
+        width: 80%;
+    }
+}
+
+.menu .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    margin-top: 8%;
+    margin-left: 25%; /* Ajustado para centralizar a imagem */
+    margin-bottom: 2%;
+    background-color: #ffffff; /* Cor de fundo do container da imagem */
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do container */
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.menu .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.menu .imagem img,
+.menu .imagem .defaultIcon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.menu .imagem .defaultIcon {
+    font-size: 70%;
+    color: #cccccc; /* Cor do ícone de pessoa */
+}
+
+.menu .editButton {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    background-color: #ffffff; /* Cor do botão de edição */
+    color: #BA6DB5;
+    border: none;
+    border-radius: 50%; /* Torna o botão redondo */
+    padding: 8px; /* Espaçamento interno do botão */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 1; /* Garante que o botão esteja acima da imagem */
+}
+
+.menu .editButton:hover {
+    background-color: #f0f0f0; /* Cor de fundo do botão ao passar o mouse */
+}
+.menu nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10%;
+    text-decoration: #ffffff;
+    margin-left: 20px;
+}
+
+.menu .link {
+    display: flex;
+    text-decoration: #ffffff;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Josefin Sans Medium';
+    font-size: 120%;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.menu .link:hover,
+.menu .link.active {
+    color: #BA6DB5;
+    background-color: white;
+    border-radius: 15px 0px 0px 15px;
+    font-weight: bold;
+    text-decoration: #ffffff;
+
+}
+
+
+
+.menu .link:hover {
+    padding-right: calc(100vw - 20px);
+    text-decoration: #ffffff;
+
+}
+/* Ajustes de fontes para responsividade */
+@media (max-width: 480px) {
+    .menu .link {
+        font-size: 110%;
+        padding: 15px;
+    }
+
+    .menu .editButton {
+        left: 55%;
+        top: 10%;
+        padding: 6px;
+    }
+
+    .menu .imagem {
+        width: 60%;
+        height: 20%;
+    }
+}

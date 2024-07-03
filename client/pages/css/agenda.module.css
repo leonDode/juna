@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Josefin Sans Light';
+    src: url('../../src/josefin/JosefinSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Bold';
+    src: url('../../src/josefin/JosefinSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Medium';
+    src: url('../../src/josefin/JosefinSans-Medium.ttf') format('truetype');
+}
+
+.agenda{
+    display: flex;
+    flex-direction: row;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 2%;;
+}
+
+.tags{
+    width: 55%;
+    height: 25%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px 1px rgba(179, 179, 179, 0.2); ;
+
+}
+.tags h2{
+    font-family: 'Josefin Sans Medium';
+    color: #ad60a6;
+    margin-left: 5%;
+}
+
+.tags ul li{
+    font-family: 'Josefin Sans Light';
+    margin-top: 2%;
+    list-style-type: none;
+}
+
+.calendario{
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px 1px rgba(179, 179, 179, 0.2); ;
+}

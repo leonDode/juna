@@ -1,0 +1,308 @@
+/* ../css/formLogin.module.css */
+
+@font-face {
+    font-family: 'Josefin Sans Light';
+    src: url('../../../src/josefin/JosefinSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Bold';
+    src: url('../../../src/josefin/JosefinSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Medium';
+    src: url('../../../src/josefin/JosefinSans-Medium.ttf') format('truetype');
+}
+
+.form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans Medium', sans-serif;
+    margin-top: -9%;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.formGroup input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2%;
+    width: 300px; /* Aumentando a largura dos inputs */
+}
+
+.formLabel {
+    font-family: 'Josefin Sans Medium', sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+}
+
+.usuario .dropdown {
+    margin-top: 2%;
+    width: 100%;
+}
+
+.formLabel::placeholder {
+    color: #72406f;
+    text-align: left;
+}
+
+.label {
+    font-size: 105%;
+    font-family: 'Josefin Sans Medium', sans-serif;
+}
+
+.formCheck {
+    margin-top: 5%;
+    width: 300px; /* Aumentando a largura da checkbox */
+}
+
+.formControl {
+    padding: 12px 20px;
+    font-family: 'Josefin Sans Medium', sans-serif;
+    color: #72406f;
+    border-radius: 10px;
+    width: 300px; /* Aumentando a largura dos controles de formulário */
+}
+.formControl::placeholder {
+    color: #72406f;
+}
+
+.invalidPl::placeholder {
+    color: #ff0800;
+}
+
+.errorBox {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.formError {
+    padding: 10px 10px;
+    background-color: #ff0800;
+    border-radius: 10px;
+    margin-top: 2%;
+    color: #ffff;
+    font-size: 70%;
+}
+
+.senhaRequisito {
+    padding: 10px 10px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    margin-top: 2%;
+    color: #72406f;
+    font-size: 62%;
+    width: 300px; /* Aumentando a largura dos requisitos de senha */
+}
+
+.passarea {
+    position: relative;
+    width: 300px; /* Aumentando a largura da área de senha */
+}
+
+.inputWithIcon {
+    padding-right: 10px; /* Espaço para o ícone */
+}
+
+.eyeButton {
+    position: absolute;
+    right: 5%;
+    top: 55%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: #fff;
+    border: none;
+    color: #72406f;
+}
+
+.Formlabel {
+    font-size: 120%;
+    font-family: 'Josefin Sans Medium', sans-serif;
+}
+
+.remind a {
+    text-decoration: none;
+    color: #72406f;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 5% 10%;
+    background-color: white;
+    color: #BA6DB5;
+    border: none;
+    margin-top: 5%; /* Adicionando espaço entre .formCheck e .btn */
+    align-self: flex-end;
+    margin-right: -50%;
+    margin-bottom: 15%;
+}
+
+.remind,
+.formCheck {
+    width: 100%; /* Ocupar toda a largura disponível */
+    margin-left: 0%; /* Removendo margem esquerda para ocupar toda a largura */
+    margin-top: 10px; /* Espaçamento entre cada elemento */
+}
+
+.btn:hover {
+    background-color: #72406f;
+}
+
+.dropdown {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-family: 'Josefin Sans Medium';
+    width: 300px; /* Aumentando a largura do dropdown */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown_input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #72406f;
+    padding: 12px 155px 12px 20px;
+}
+
+.dropdown_icon {
+    position: absolute;
+    right: 20px; /* Alinhar à direita do padding */
+}
+
+.dropdown_menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 120%;
+    color: #72406f;
+}
+
+.dropdown_item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown_item:hover {
+    background-color: #f0f0f0;
+}
+
+.usuario .label {
+    margin-left: 0%;
+}
+.infoIcon {
+    position: absolute;
+    right: 40px; /* Ajuste para ficar ao lado do botão de olho */
+    top: 55%;
+    transform: translateY(-50%);
+    color: #72406f; /* Cor padrão roxa */
+    cursor: pointer;
+}
+
+.invalidInfoIcon {
+    color: #ff0800; /* Cor vermelha quando a senha é inválida */
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: #ff0800;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Ajuste conforme necessário */
+    left: 50%;
+    margin-left: -100px; /* Metade da largura do tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ff0800 transparent transparent transparent;
+}
+
+.infoIcon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.closeButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalText {
+    font-family: 'Josefin Sans Medium', sans-serif;
+    color: #72406f;
+}

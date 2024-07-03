@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Josefin Sans Light';
+    src: url('../../../src/josefin/JosefinSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Bold';
+    src: url('../../../src/josefin/JosefinSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Medium';
+    src: url('../../../src/josefin/JosefinSans-Medium.ttf') format('truetype');
+}
+
+.calendar {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Josefin Sans Medium';
+    color: #ad60a6;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header .h2 {
+    font-family: 'Josefin Sans Medium';
+    text-transform: uppercase;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+
+
+}
+
+.button button {
+    border: none;
+    background: #fff;
+}
+
+.dayLabel {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f5e6f0;
+}
+
+.day {
+    padding: 10px;
+    background-color: #f9f9f9;
+    position: relative;
+    display: inline-block; /* Permite ajuste ao conteúdo */
+    vertical-align: top; /* Alinha os dias no topo para evitar espaçamentos desiguais */
+    min-width: 80px; /* Largura mínima para evitar que o dia fique muito estreito */
+    max-width: 120px; /* Largura máxima para evitar que o dia fique muito largo */
+    white-space: normal; /* Permite que o texto quebre naturalmente */
+    word-wrap: break-word; /* Quebra de palavra para o caso de palavras longas */
+}
+
+.day span {
+    cursor: pointer;
+}
+
+.day div {
+    margin-top: 5px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+button .pass {
+    font-size: large;
+    border: none;
+    background-color: #fff;
+}
+
+.eventItem {
+    color: #4e234b;
+    font-size: 50%;
+}
+
+.input {
+    border: 1px solid #ad60a6;
+    border-radius: 5px;
+    padding: 5%;
+    align-self: center;
+    width: 80% ;
+}
+
+.input::placeholder{
+    font-family: 'josefin sans medium'
+}
+
+.select{
+    border: 1px solid #ad60a6;
+    border-radius: 5px;
+    padding: 5%;
+    align-self: center;
+    margin-top: 5%;
+    width: 90% ;
+    padding-right: 5px;
+    color: #5e5e5e;
+    align-items: center;
+    font-family: 'josefin sans medium';
+    appearance: none;
+
+}
+
+.select option{
+    padding: 12%;
+    font-size: 120%;
+}
+
+
+.inputTime{
+    border: 1px solid #ad60a6;
+    border-radius: 5px;
+    padding: 5%;
+    align-self: center;
+    width: 80% ;
+    margin-top: 4%;
+    color: #5e5e5e;
+}
+
+.eventDescription {
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 100%; /* Ajustado para ocupar a largura máxima do elemento pai */
+}

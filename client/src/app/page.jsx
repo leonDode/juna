@@ -5,7 +5,7 @@ import Menu from "../../ui/components/surfaces/menu";
 export default function Home() {
   return (
    <div>
-    <Menu/>
+    HOME
    </div>
   );
 }

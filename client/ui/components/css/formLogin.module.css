@@ -50,6 +50,7 @@
 
 .label {
     font-size: 130%;
+    margin-top: 5%;
     font-family: 'Josefin Sans Medium', sans-serif;
 }
 
@@ -75,16 +76,23 @@
 .errorBox {
     margin-top: 5%;
     margin-bottom: 5%;
-    
+    color: #FFFFFF;
+    background-color: #ff0000; /* Ajuste a cor de fundo conforme necessário */
+    padding: 10px;
+    border-radius: 5px;
 }
+
 .formError {
-    padding: 10px 10px;
-    background-color: rgb(238, 238, 238);
-    border-radius: 10px;
-    margin-top: 2%;
-    color: #72406f;
-    font-size: 90%;
+    padding: 5px;
+    background-color: #ff0000; /* Ajuste a cor de fundo conforme necessário */
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #FFFFFF;
+    margin-top: 3%;
+    margin-left: -15%;
+    font-size: 55%; /* Ajuste o tamanho da fonte conforme necessário */
 }
+
 
 .remind {
     margin-left: 45%;

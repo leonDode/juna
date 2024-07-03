@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Josefin Sans Light';
+    src: url('../../../../src/josefin/JosefinSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Bold';
+    src: url('../../../../src/josefin/JosefinSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Sans Medium';
+    src: url('../../../../src/josefin/JosefinSans-Medium.ttf') format('truetype');
+}
+
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .modalBody {
+    margin: 20px 0;
+  }
+  
+  .modalFooter {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  
+  .removeButton, .confirmButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Josefin Sans Medium';
+
+  }
+  
+  .removeButton {
+    background-color: #ff4e4e;
+    color: #ffffff;
+  }
+  
+  .confirmButton {
+    background-color: #6bea64;
+    color: white;
+  }
+  
+  .removeButton:hover{
+    background-color: #f39696;
+  }
+
+  .confirmButton:hover{
+    background-color: #98e994;
+
+  }
