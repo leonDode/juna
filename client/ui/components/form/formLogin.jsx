@@ -22,7 +22,7 @@ export default function FormLogin() {
     const handlePassword = () => setIsShow(!isShow);
 
     const autoLogin = async (email, senha) => {
-        try {
+      
             const response = await fetch('http://localhost:3333/login', {
                 method: 'POST',
                 headers: {
@@ -30,34 +30,38 @@ export default function FormLogin() {
                 },
                 body: JSON.stringify({ email, senha })
             });
+
+           
     
             if (!response.ok) {
                 const errorData = await response.json();
                 throw new Error(errorData.msg || 'Erro ao fazer login');
             }
-    
-            const { token, userId, role } = await response.json();
-            console.log('token:', token);
-            console.log('userId:', userId);
-            console.log('role:', role);
-    
-            // Armazenar o token JWT no localStorage
-            localStorage.setItem('token', token);
-    
-            // Construir a URL de redirecionamento com base na role
-            let redirectUrl = '/';
-            if (role === 'admin') {
-                redirectUrl = `/dashboard-administrador/${userId}/${token}`;
-            } else if (role === 'user') {
-                redirectUrl = `/dashboard-cliente/${userId}/${token}`;
-            }
-    
-            // Redirecionar para a URL construída
-            window.location.href = redirectUrl;
-        } catch (error) {
-            setErrorMessage(error.message);
-            console.error('Erro ao fazer login:', error);
-        }
+            const usuarioData = await response.json();
+            
+
+            if (usuarioData.userId && usuarioData.role) {
+                if(usuarioData.role === 'admin'){
+                router.push({
+                  pathname: '/dashboard-administrador/[usuarioId]/[token]',
+                  query: { usuarioId: usuarioData.userId,token: usuarioData.token},
+                });
+              }else if(usuarioData.role === 'user'){
+                router.push({
+                    pathname: '/dashboard-cliente/[usuarioId]/[token]',
+                    query: { usuarioId: usuarioData.userId,token: usuarioData.token},
+                  });
+              }
+              } else {
+                console.error("Verifique se digitou os dados corretamente",);
+              }
+            
+
+         
+           
+            
+           
+       
     };
     
     
